@@ -14,7 +14,7 @@ jobs :
         run  : pip install pytest
         
       - name : Run Test
-        run  : pytest -m test.py 
+        run  : pytest test.py 
         
       - name: Commit if Tests Pass
         if: success()
