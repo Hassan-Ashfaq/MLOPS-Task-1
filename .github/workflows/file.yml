@@ -18,7 +18,7 @@ jobs :
         
       - name: Commit if Tests Pass
         if: success()
-        uses: Hassan-Ashfaq/git-auto-commit-action@v3
+        uses: MLOPS-Task-1/git-auto-commit-action@v3
         with:
           commit_message: "Automated test success 🎉"
           push: true
