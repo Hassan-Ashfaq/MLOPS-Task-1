@@ -22,4 +22,7 @@ jobs :
         with:
           commit_message: "Automated test success 🎉"
           push: true
+          repository: MLOPS-Task-1/git-auto-commit-action
+#         commit_user_name: Your Name
+#         commit_user_email: your.email@example.com
        
