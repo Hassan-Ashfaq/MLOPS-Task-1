@@ -15,5 +15,11 @@ jobs :
         
       - name : Run Test
         run  : pytest test.py 
-       
+        
+      - name: Commit if Tests Pass
+        if: success()
+        uses: Hassan-Ashfaq/git-auto-commit-action@v3
+        with:
+          commit_message: "Automated test success 🎉"
+          push: true
        
