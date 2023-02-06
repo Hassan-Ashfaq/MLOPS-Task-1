@@ -22,7 +22,12 @@ jobs :
         with:
           commit_message: "Automated test success 🎉"
           branch: main
+          commit_options: '--no-verify --signoff'
+          
           repository: .
-          commit_user_name: Hassan-Ashfaq
-          commit_user_email: hassanashfaq20@gmail.com
+          commit_user_name: My GitHub Actions Bot
+          commit_user_email: my-github-actions-bot@example.org
+          commit_author: Author <actions@github.com>
+#           commit_user_name: Hassan-Ashfaq
+#           commit_user_email: hassanashfaq20@gmail.com
        
