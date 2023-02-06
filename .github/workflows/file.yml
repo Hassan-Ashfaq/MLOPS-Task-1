@@ -22,7 +22,7 @@ jobs :
         with:
           commit_message: "Automated test success 🎉"
           branch: main
-          repository: Hassan-Ashfaq/git-auto-commit-action
+          repository: .
           commit_user_name: Hassan-Ashfaq
           commit_user_email: hassanashfaq20@gmail.com
        
