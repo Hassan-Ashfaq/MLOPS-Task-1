@@ -5,6 +5,11 @@ def test_getAmount():
   a.depositMoney(1000)
   assert a.queryMoney()==1000
   
+def test_getAmount_2():
+  a = Wallet()
+  a.depositMoney(5000)
+  assert a.queryMoney()==5000
+  
 def test_removeAmount_pass():
   a = Wallet()
   a.depositMoney(1000)
