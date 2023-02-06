@@ -18,16 +18,7 @@ jobs :
         
       - name: Commit if Tests Pass
         if: success()
-        uses: stefanzweifel/git-auto-commit-action@v3
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Automated test success 🎉"
           branch: main
-          commit_options: '--no-verify --signoff'
-          
-          repository: .
-          commit_user_name: My GitHub Actions Bot
-          commit_user_email: my-github-actions-bot@example.org
-          commit_author: Author <actions@github.com>
-#           commit_user_name: Hassan-Ashfaq
-#           commit_user_email: hassanashfaq20@gmail.com
-       
