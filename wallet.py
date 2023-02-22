@@ -9,6 +9,7 @@ class Wallet:
     return self.balance
   
   def withdrawal(self, money):
+    print('Test')
     if self.balance >= money:
       self.balance -= money
       return 'Done'
