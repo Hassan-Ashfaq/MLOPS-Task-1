@@ -1,16 +1,16 @@
 class Wallet:
   def __init__(self):
-    self.balance = 0
+    self.b = 0
    
   def depositMoney(self, money):
-    self.balance = money
+    self.b = money
   
   def queryMoney(self):
-    return self.balance
+    return self.b
   
   def withdrawal(self, money):
     print('Test')
-    if self.balance >= money:
-      self.balance -= money
+    if self.b >= money:
+      self.b -= money
       return 'Done'
     return 'Low Balance'
