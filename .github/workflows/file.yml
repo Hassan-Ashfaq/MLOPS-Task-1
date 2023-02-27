@@ -1,24 +1,17 @@
-# name : push events workflow
+name : push events workflow
 
-# on : push 
+on : push 
 
-# jobs :
-#   unit-testing :
-#     runs-on: ubuntu-latest
+jobs :
+  unit-testing :
+    runs-on: ubuntu-latest
     
-#     steps :
-#       - name : Checkout Code
-#         uses : actions/checkout@v2
+    steps :
+      - name : Checkout Code
+        uses : actions/checkout@v2
         
-#       - name : Install PyTest 
-#         run  : pip install pytest
+      - name : Install PyTest 
+        run  : pip install pytest
         
-#       - name : Run Test
-#         run  : pytest test.py 
-        
-#       - name: Commit if Tests Pass
-#         if: success()
-#         uses: stefanzweifel/git-auto-commit-action@v4.16.0
-#         with:
-#           commit_message: "Automated test success 🎉"
-#           branch: main
+      - name : Run Test
+        run  : pytest test.py
